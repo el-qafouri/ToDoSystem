@@ -1,22 +1,18 @@
-package com.example.todo.model;
+package com.example.todo.dtos;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
-public class Todo {
+@Getter
+@Setter
+public class TodoDto {
 
     @Id
     private Long id;
     private String title;
     private String description;
     private boolean done;
-
-
 }
