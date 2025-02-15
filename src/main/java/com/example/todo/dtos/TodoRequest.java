@@ -1,17 +1,15 @@
 package com.example.todo.dtos;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
 @Getter
 @Setter
-public class TodoDto {
-
-    @Id
-    private Long id;
+@NoArgsConstructor
+@AllArgsConstructor
+public class TodoRequest {
     private String title;
     private String description;
     private boolean done;
